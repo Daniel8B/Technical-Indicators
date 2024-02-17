@@ -17,10 +17,8 @@ import streamlit as st
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-subplots.__version__
 
 # Save the current day
-ticker = "CL=F"
 timestamp = pd.Timestamp(datetime.datetime(2020,10,10))
 today = timestamp.today().strftime("%Y-%m-%d")
 
