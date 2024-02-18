@@ -166,7 +166,7 @@ st.title("Technical Indicators for Financial Instruments")
 st.write("The app accepts three arguments:\n"
         "-Ticket symbol (e.g.  'GOOGL', 'XOM', 'CL=F')\n"
         "-Start Date (min value: 2000-01-01)\n"
-        "-End Date (min value: 2001-01-01)"
+        "-End Date (min value: 2001-01-01)")
 
 min_date1 = datetime.date(2000,1,1)
 min_date2 = datetime.date(2001,1,1)
