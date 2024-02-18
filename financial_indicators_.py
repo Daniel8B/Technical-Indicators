@@ -190,7 +190,7 @@ load_data_button = st.button("Load Data")
 if load_data_button:
 
     df = load_data(ticker=ticker, start_date=start_date, end_date=end_date)
-    if df == None:
+    if type(df) == type(None):
         st.error("Please enter a valid ticker symbol!")
     else:
         subs, vol = plot_indicators(df)
