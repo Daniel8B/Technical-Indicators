@@ -170,7 +170,7 @@ max_date = datetime.date(2024,1,1)
 
 # Sidebar inputs
 ticker = st.sidebar.text_input('Ticker: ')
-start_date = st.sidebar.date_input('Start Date', min_value= datetime.date(2000,1,1), max_value=datetime.datetime.today())
+start_date = st.sidebar.date_input('Start Date',value=datetime.date(2000,1,1), min_value= datetime.date(2000,1,1), max_value=datetime.datetime.today())
 end_date = st.sidebar.date_input('End Date', min_value=datetime.date(2001,1,1), max_value=datetime.datetime.today())
 
 # Download data
