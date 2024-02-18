@@ -188,11 +188,13 @@ load_data_button = st.button("Load Data")
 if load_data_button:
     try:
         df = load_data(ticker=ticker, start_date=start_date, end_date=end_date)
+        subs, vol = plot_indicators(df)
+        st.plotly_chart(subs)
+        st.plotly_chart(vol)
     except ValueError:
-        st.error("Please enter a valid ticker")
-    subs, vol = plot_indicators(df)
+        st.error("Please enter a valid ticker symbol")
 
-    st.plotly_chart(subs)
-    st.plotly_chart(vol)
+
+
     
 
