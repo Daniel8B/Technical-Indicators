@@ -172,7 +172,7 @@ start_date = st.sidebar.date_input('Start Date')
 end_date = st.sidebar.date_input('End Date')
 
 # Download data
-df = load_data(ticker, start_date, end_date)
+df = load_data(ticker, start_date=start_date, end_date=end_date)
 
 
 st.plotly_chart(plot_indicators(df))
