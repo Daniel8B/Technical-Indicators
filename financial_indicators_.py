@@ -167,12 +167,12 @@ text = (
     "The app accepts three arguments: \n"
     "- **Ticket symbol** (e.g.  'GOOGL', 'XOM', 'CL=F')  \n"
     "If you enter an invalid ticker or ticker that can't be downloaded from Yahoo Finance  \n"
-    "you will receive an error 'Please enter a valid symbol!'  \n"
+    "you will receive an error *'Please enter a valid symbol!'*  \n"
     "- **Start Date** (min value: 2000-01-01)  \n"
     "- **End Date** (min value: 2001-01-01)  \n"
 )
 
-st.write(text, font="Arial", font_size=14)
+st.write(text, font="Arial", font_size=16)
 
 min_date1 = datetime.date(2000,1,1)
 min_date2 = datetime.date(2001,1,1)
@@ -196,8 +196,18 @@ if load_data_button:
         subs, vol = plot_indicators(df)
         st.plotly_chart(subs)
         st.plotly_chart(vol)
-
-
+        
+investopedia_url = "https://www.investopedia.com/articles/active-trading/102314/top-technical-indicators-commodities-investing.asp"
+indicators_text = (
+    "The technical indicators used are 'Bollinger Bands', 'Relative Strength Index' and 'Stochastic Oscillator'.  \n"
+    "The Bollinger Bands are calculated using 20-day Simple Moving Average.  \n"
+    "The average gain and loss needed for the Relative Strength are calculated with a 14-day rolling window.  \n"
+    "The fast line (%K) of the Stochastic Oscillator is calculated with 14-day rolling window  \n"
+    "and the slow line (%D) uses a 3-day Simple Moving Average over %K.  \n"
+    f"For more information about the technical indicators please refer to: ({investopedia_url}): 
+    
+)
+st.write(indicators_text, font="Times New Roman", fontsize=16)
 
 
 
