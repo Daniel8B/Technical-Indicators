@@ -182,4 +182,6 @@ if load_data_button:
     subs, vol = plot_indicators(df)
 
     st.plotly_chart(subs)
+    st.plotly_chart(vol)
+    
 
