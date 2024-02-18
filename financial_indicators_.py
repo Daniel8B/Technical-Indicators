@@ -166,8 +166,11 @@ st.title("Technical Indicators for Financial Instruments")
 text = (
     "The app accepts three arguments:\n"
     "- Ticket symbol (e.g.  'GOOGL', 'XOM', 'CL=F')\n"
+    "  If you enter an invalid ticker or ticker\n"
+    "  that can't be downloaded from Yahoo Finance\n"
+    "  You will receive an error "Please enter a valid symbol!"
     "- Start Date (min value: 2000-01-01)\n"
-    "- End Date (min value: 2001-01-01)"
+    "- End Date (min value: 2001-01-01)\n"
 )
 
 st.write(text, font="Arial", font_size=14)
@@ -189,7 +192,7 @@ if load_data_button:
 
     df = load_data(ticker=ticker, start_date=start_date, end_date=end_date)
     if df == None:
-        st.error("Please enter a valid ticker symbol")
+        st.error("Please enter a valid ticker symbol!")
     else:
         subs, vol = plot_indicators(df)
         st.plotly_chart(subs)
