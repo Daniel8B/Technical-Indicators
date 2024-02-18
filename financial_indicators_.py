@@ -168,7 +168,7 @@ text = (
     "- Ticket symbol (e.g.  'GOOGL', 'XOM', 'CL=F')\n"
     "  If you enter an invalid ticker or ticker\n"
     "  that can't be downloaded from Yahoo Finance\n"
-    "  You will receive an error "Please enter a valid symbol!"
+    "  You will receive an error 'Please enter a valid symbol!'\n"
     "- Start Date (min value: 2000-01-01)\n"
     "- End Date (min value: 2001-01-01)\n"
 )
