@@ -204,7 +204,7 @@ indicators_text = (
     "The average gain and loss needed for the Relative Strength are calculated with a 14-day rolling window.  \n"
     "The fast line (%K) of the Stochastic Oscillator is calculated with 14-day rolling window  \n"
     "and the slow line (%D) uses a 3-day Simple Moving Average over %K.  \n"
-    f"For more information about the technical indicators please refer to: ({investopedia_url}): 
+    f"For more information about the technical indicators please refer to: ({investopedia_url})" 
     
 )
 st.write(indicators_text, font="Times New Roman", fontsize=16)
