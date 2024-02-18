@@ -199,11 +199,11 @@ if load_data_button:
         
 investopedia_url = "https://www.investopedia.com/articles/active-trading/102314/top-technical-indicators-commodities-investing.asp"
 indicators_text = (
-    "The technical indicators used are 'Bollinger Bands', 'Relative Strength Index' and 'Stochastic Oscillator'.  \n"
+    "The technical indicators used are **'Bollinger Bands'**, **'Relative Strength Index'** and **'Stochastic Oscillator'**.  \n\n"
     "The Bollinger Bands are calculated using 20-day Simple Moving Average.  \n"
     "The average gain and loss needed for the Relative Strength are calculated with a 14-day rolling window.  \n"
     "The fast line (%K) of the Stochastic Oscillator is calculated with 14-day rolling window  \n"
-    "and the slow line (%D) uses a 3-day Simple Moving Average over %K.  \n"
+    "and the slow line (%D) uses a 3-day Simple Moving Average over %K.  \n\n"
     f"For more information about the technical indicators please refer to: ({investopedia_url})" 
     
 )
