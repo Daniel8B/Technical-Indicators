@@ -173,10 +173,11 @@ end_date = st.sidebar.date_input('End Date')
 
 # Download data
 load_data_button = st.button("Load Data")
-subs, vol = plot_indicators(df)
+
 
 if load_data_button:
     df = load_data(ticker=ticker, start_date=start_date, end_date=end_date)
+    subs, vol = plot_indicators(df)
 
     st.plotly_chart(subs)
 
