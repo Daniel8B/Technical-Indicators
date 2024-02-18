@@ -2,3 +2,4 @@ pandas==1.5.3
 numpy==1.23.5
 yfinance==0.2.36
 plotly==5.15.0
+inotify=0.2.10
