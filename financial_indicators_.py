@@ -150,13 +150,13 @@ def plot_indicators(df):
   sub_figs.update_yaxes(tickvals=[0, 20, 80, 100], row=3, showgrid=False)
 
   # Add a Volume chart
-  # vol_fig = go.Figure(go.Bar(x = df.index, y = df['Volume'], showlegend=False,
-  #                           marker_color="#800020"))
+  vol_fig = go.Figure(go.Bar(x = df.index, y = df['Volume'], showlegend=False,
+                            marker_color="#800020"))
 
-  # vol_fig.update_layout(height=400, title="Volume", title_x=0.5)
+  vol_fig.update_layout(height=400, title="Volume", title_x=0.5)
 
-  sub_figs.show();
-  #vol_fig.show()
+  # sub_figs.show();
+  # vol_fig.show()
 
 # Streamlit App
 
@@ -177,6 +177,5 @@ load_data_button = st.button("Load Data")
 if load_data_button:
     df = load_data(ticker=ticker, start_date=start_date, end_date=end_date)
 
-    
     st.plotly_chart(plot_indicators(df))
 
