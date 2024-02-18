@@ -168,6 +168,7 @@ text = (
     "- Ticket symbol (e.g.  'GOOGL', 'XOM', 'CL=F')\n"
     "- Start Date (min value: 2000-01-01)\n"
     "- End Date (min value: 2001-01-01)"
+)
 
 st.write(text, font="Arial", font_size=14)
 
