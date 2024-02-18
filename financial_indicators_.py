@@ -13,6 +13,7 @@ import numpy as np
 import datetime
 import streamlit as st
 import plotly
+import inotify
 
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
