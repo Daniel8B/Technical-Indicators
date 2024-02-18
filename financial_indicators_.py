@@ -172,7 +172,7 @@ text = (
     "- **End Date** (min value: 2001-01-01)  \n"
 )
 
-st.write(text, font="Times New Roman", font_size=18)
+st.write(text, font="Times New Roman", font_size=22)
 
 min_date1 = datetime.date(2000,1,1)
 min_date2 = datetime.date(2001,1,1)
@@ -201,7 +201,8 @@ if load_data_button:
 investopedia_url = "https://www.investopedia.com/articles/active-trading/102314/top-technical-indicators-commodities-investing.asp"
 
 indicators_text = (
-    "  \n\n\nThe technical indicators used are **'Bollinger Bands'**, **'Relative Strength Index'** and **'Stochastic Oscillator'**.  \n\n"
+    "  \n\n\n"
+    "The technical indicators used are **'Bollinger Bands'**, **'Relative Strength Index'** and **'Stochastic Oscillator'**.  \n\n"
     "The Bollinger Bands are calculated using 20-day Simple Moving Average.  \n"
     "The average gain and loss needed for the Relative Strength are calculated with a 14-day rolling window.  \n"
     "The fast line (%K) of the Stochastic Oscillator is calculated with 14-day rolling window  \n"
@@ -209,7 +210,7 @@ indicators_text = (
     f"For more information about the technical indicators please refer to: ({investopedia_url})" 
     
 )
-st.write(indicators_text, font="Times New Roman", fontsize=18)
+st.write(indicators_text, font="Times New Roman", fontsize=22)
 
 
 
