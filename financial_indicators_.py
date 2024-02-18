@@ -177,5 +177,6 @@ load_data_button = st.button("Load Data")
 if load_data_button:
     df = load_data(ticker=ticker, start_date=start_date, end_date=end_date)
 
-    plot_indicators(df)
+    plotlies = plot_indicators(df)
+    st.plotly_chart(plotlies)
 
