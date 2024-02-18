@@ -158,6 +158,8 @@ def plot_indicators(df):
   # sub_figs.show();
   # vol_fig.show()
 
+return sub_figs, vol_fig
+
 # Streamlit App
 
 st.title('Technical Indicators for Financial Instruments')
