@@ -170,8 +170,8 @@ max_date = pd.Timestamp('2024-01-01')
 
 # Sidebar inputs
 ticker = st.sidebar.text_input('Ticker: ')
-start_date = st.sidebar.date_input('Start Date')
-end_date = st.sidebar.date_input('End Date')
+start_date = st.sidebar.date_input('Start Date', min_value=min_date1, max_value=max_date)
+end_date = st.sidebar.date_input('End Date', min_value=min_date2, max_value=today)
 
 # Download data
 load_data_button = st.button("Load Data")
