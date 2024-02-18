@@ -162,10 +162,14 @@ def plot_indicators(df):
 
 st.title('Technical Indicators for Financial Instruments')
 
+min_date1 = pd.Timestamp('2000-01-01')
+min_date2 = pd.Timestamp('2001-01-01')
+max_date = pd.Timestamp('2024-01-01')
+
 # Sidebar inputs
 ticker = st.sidebar.text_input('Ticker: ')
-start_date = st.sidebar.date_input('Start Date', min_value="2000-01-01", max_value="2024-01-01")
-end_date = st.sidebar.date_input('End Date', min_value="2001-01-01", max_value=today)
+start_date = st.sidebar.date_input('Start Date', min_value=min_date1, max_value=max_date)
+end_date = st.sidebar.date_input('End Date', min_value=min_date2, max_value=today)
 
 # Download data
 df = load_data(ticker, start_date, end_date)
